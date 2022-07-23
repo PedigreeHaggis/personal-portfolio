@@ -23,7 +23,10 @@
   /* colours */
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #205375;
+  --clr-accent: #0aa1dd;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.2em 0.2em 0.5em rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 900px) {
@@ -61,6 +64,11 @@ nav {
 
 i {
   margin: 0.25em 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* typography */
@@ -120,8 +128,7 @@ h3 {
 /* introduction section */
 
 .intro-img {
-  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
-    0.2em 0.2em 0.5em rgba(0, 0, 0, 0.15);
+  box-shadow: var(--bs);
 }
 
 .section-subtitle-intro {
@@ -206,4 +213,58 @@ h3 {
   .skills {
     display: none;
   }
+}
+
+/* projects section */
+
+.my-projects {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  text-align: center;
+  height: 1000px;
+}
+
+.section-title-projects {
+  position: relative;
+  color: var(--clr-accent);
+  font-family: var(--ff-title);
+}
+
+.section-title-projects::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 2px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-dark);
+  opacity: 0.25;
+}
+
+.project-image {
+  box-shadow: var(--bs);
+  margin-bottom: 0.5em;
+  height: 200px;
+}
+
+.project-heading {
+  font-family: var(--ff-title);
+  font-size: var(--fs-h3);
+  margin-bottom: 0.5em;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1200px;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  max-width: 33%;
+  padding: 1em;
 }
