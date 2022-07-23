@@ -4,119 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;700&family=Roboto:wght@300;400;700;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Gary Taylor | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js"></script>
-    <title>Gary Taylor | Portfolio</title>
+    <script src="https://kit.fontawesome.com/fbfad26e97.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <p class="logo">[devgary]</p>
-      </div>
-      <button class="nav-toggle" aria-label="toggle naviation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="navigation">
+      <p class="logo">[devGary]</p>
+      <span class="hamburger"></span>
+      <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Me</a>
+          <li class="nav-list-item">
+            <a href="#home" class="nav-link">Home</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#pojects">My Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">My Skills</a></li>
+          <li class="nav-list-item">
+            <a href="#about" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <!-- Introduction -->
+    <!-- introducton -->
     <section class="intro" id="home">
       <h1 class="section-title section-title-intro">
-        Hi, I am <strong>Gary Taylor</strong>
+        Hi, I Am<strong>Gary Taylor</strong>
       </h1>
-      <p class="section-subtitle section-subtitle-intro">
-        Aspiring Web Developer
-      </p>
-      <img src="imgs/profilepic.JPG" alt="Picture of Gary holding beer" class="intro-image" />
+      <p class="section-subtitle section-subtitle-intro">Aspiring Web Developer</p>
+      <img
+        src="imgs/profilepic.JPG"
+        alt="Picture of Gary Drinking Beer"
+        class="intro-img"
+      />
     </section>
 
     <!-- about me -->
     <section class="about-me" id="about">
-        <h2 class="section-title section-title-about">Who I am</h2>
-        <p class="section-subtitle section-subtitle-about">IT Engineer & Aspiring Developer</p>
-
-        <div class="about-me-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aperiam eum dolorem doloremque ipsam, voluptatum explicabo quam repellendus tempore? Esse quos quibusdam mollitia nihil beatae distinctio excepturi repudiandae labore culpa.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem inventore adipisci, laborum assumenda incidunt natus iure numquam at modi aut dicta nisi magni, alias architecto rerum provident deleniti necessitatibus dolor?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nostrum. Necessitatibus autem recusandae beatae consectetur dolores sit, ex nulla officiis alias asperiores. Officia culpa quam quae eaque, praesentium itaque consequatur.</p>
+      <h2 class="section-title section-title-about">Who I am</h2>
+      <p class="section-subtitle section-subtitle-about">
+        IT Systems Engineer & Aspiring Developer
+      </p>
+      <p class="section-text section-text-about">I am an Information Technology Professional & Aspiring Developer based in Glasgow, Scotland</p>
+      <br>
+      <p class="section-text section-text-about">
+        For the last 10 years I have been working at a Managed Service Provider supporting over 100 different client infrastructures and many different technologies. Ranging
+        from traditional on-premise server infrastructure to full cloud infrastructure utilising Microsoft 365 and Microsoft Azure. I started as an apprentice and now I am 
+        responsible for the business Internal Systems and Processes.
+      </p>
+      <br>
+      <p class="section-text section-text-about">
+        I have always had an interest and passion for coding and development, I would always find myself coming back to learning development. I am not making the leap to 
+        change my career path into my passion for Software Development. I am self-taught and always looking to improve.
+      </p>
+      <br>
+      <div class="skills">
+        <div class="skill">
+          <i class="fa-brands fa-html5 fa-2xl"></i>
+          <p>HTML</p>
         </div>
-        </section>
+        <div class="skill">
+          <i class="fa-brands fa-css3-alt fa-2xl"></i>
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-js-square fa-2xl"></i>
+          <p>Javascript</p>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-github fa-2xl"></i>
+          <p>GitHub</p>
+        </div>
+      </div>
 
-    <!-- my projects -->
+    </section>
+
+    <!-- projects -->
     <section class="my-projects" id="projects">
-      <h2 class="section-title section-title-projects">What I've Done</h2>
+      <h2 class="section-title section-title-projects">My Work</h2>
       <div class="projects">
         <div class="project">
-            <a href="#" class="project-link">
-                <img src="imgs/projectsph.jpeg" alt="" class="project-image">
-            </a>
-          <h3>Lorem Ipsum 4</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-            quibusdam cumque quam adipisci culpa non corrupti voluptas molestiae
-            asperiores ea nulla minus iusto delectus incidunt, similique maxime
-            tenetur nostrum porro!
+          <img src="imgs/projectsph.jpeg" alt="" class="project-img" />
+          <h3 class="project-title">Lorem Ipsum 1</h3>
+          <p class="project-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+            accusantium quidem voluptatum ullam error quasi natus voluptas, sunt
+            cumque rerum! Ullam dolorem voluptates quidem id expedita! Ab optio
+            quas magnam.
           </p>
-        </div>
-        </div>
-        <div class="project-item">
-            <a href="#" class="project-link">
-                <img src="imgs/projectsph.jpeg" alt="" class="project-image">
-            </a>
-          <h3>Lorem Ipsum 4</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-            quibusdam cumque quam adipisci culpa non corrupti voluptas molestiae
-            asperiores ea nulla minus iusto delectus incidunt, similique maxime
-            tenetur nostrum porro!
-          </p>
-        </div>
-        <div class="project-item">
-            <a href="#" class="project-link">
-                <img src="imgs/projectsph.jpeg" alt="" class="project-image">
-            </a>
-          <h3>Lorem Ipsum 4</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-            quibusdam cumque quam adipisci culpa non corrupti voluptas molestiae
-            asperiores ea nulla minus iusto delectus incidunt, similique maxime
-            tenetur nostrum porro!
-          </p>
-        </div>
-        <div class="project-item">
-            <a href="#" class="project-link">
-                <img src="imgs/projectsph.jpeg" alt="" class="project-image">
-            </a>
-          <h3>Lorem Ipsum 4</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-            quibusdam cumque quam adipisci culpa non corrupti voluptas molestiae
-            asperiores ea nulla minus iusto delectus incidunt, similique maxime
-            tenetur nostrum porro!
-          </p>
+          <div class="project">
+            <img src="imgs/projectsph.jpeg" alt="" class="project-img" />
+            <h3 class="project-title">Lorem Ipsum 2</h3>
+            <p class="project-text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+              accusantium quidem voluptatum ullam error quasi natus voluptas, sunt
+              cumque rerum! Ullam dolorem voluptates quidem id expedita! Ab optio
+              quas magnam.
+            </p>
+            <div class="project">
+              <img src="imgs/projectsph.jpeg" alt="" class="project-img" />
+              <h3 class="project-title">Lorem Ipsum 3</h3>
+              <p class="project-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                accusantium quidem voluptatum ullam error quasi natus voluptas, sunt
+                cumque rerum! Ullam dolorem voluptates quidem id expedita! Ab optio
+                quas magnam.
+              </p>
         </div>
       </div>
     </section>
-
-    <!-- footer -->
-    <footer>
-        <a href="mailto:garycharlestaylor@outlook.com" class="footer-link">garycharlestaylor@outlook.com</a>
-        <ul class="social-list">
-            <li class="social-list-item"><a href="" class="social-list-link"></a>LinkedIN</li>
-            <li class="social-list-item"><a href="" class="social-list-link"></a>GitHub</li>
-        </ul>
+    <footer class="footer" id="contact">
+      <a href="mailto:garycharlestaylor@outlook.com" class="email">Email Me</a>
+      <a href="#" class="external-link github">GitHub</a>
+      <a href="#" class="external-link linkedin">linkedIn</a>
     </footer>
   </body>
 </html>
