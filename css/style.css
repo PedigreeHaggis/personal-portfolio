@@ -221,7 +221,6 @@ h3 {
   background-color: var(--clr-light);
   color: var(--clr-dark);
   text-align: center;
-  height: 1000px;
 }
 
 .section-title-projects {
@@ -243,6 +242,7 @@ h3 {
 .project-image {
   box-shadow: var(--bs);
   margin-bottom: 0.5em;
+  width: 400px;
   height: 200px;
 }
 
@@ -254,17 +254,14 @@ h3 {
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   max-width: 1200px;
-  max-height: 100%;
   margin: 0 auto;
 }
 
 .project {
-  display: flex;
-  flex-direction: column;
-  max-width: 33%;
+  width: 400px;
   padding: 1em;
 }
