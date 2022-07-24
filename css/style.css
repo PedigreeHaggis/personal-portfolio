@@ -24,6 +24,7 @@
   --clr-light: #fff;
   --clr-dark: #303030;
   --clr-accent: #0aa1dd;
+  --clr-accent-op: rgba(10, 161, 221, 0.5);
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.2em 0.2em 0.5em rgba(0, 0, 0, 0.15);
@@ -99,6 +100,7 @@ h3 {
 
 .section-title {
   margin-bottom: 0.25em;
+  font-family: var(--ff-title);
 }
 
 .section-subtitle {
@@ -174,52 +176,67 @@ h3 {
 /* about me section */
 
 .about-me {
-  background-image: url("../imgs/codebg.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: multiply;
-
-  background-color: var(--clr-accent);
-  color: var(--clr-light);
-
-  text-align: center;
-
+  color: var(--clr-dark);
+  display: grid;
+  gap: 1rem;
   padding: 3em;
+  margin: 0 auto;
 }
 
-.section-subtitle-about {
-  display: inline-block;
+.me {
+  padding: 3em;
+  background-color: #eee;
+  box-shadow: var(--bs);
+  height: 100%;
 }
 
-.section-text-about {
-  width: 75%;
+.skill-logo {
+  width: 100px;
   margin: 0 auto;
 }
 
 .skills {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: auto;
+  display: grid;
+  background-color: #eee;
+  box-shadow: var(--bs);
+  gap: 1rem;
+  padding: 3em;
+  height: 100%;
 }
 
 .skill {
-  padding: 0.25em 0.5em;
+  background-color: #fff;
+  box-shadow: var(--bs);
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 1200px) {
+  .about-me {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .skills {
-    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+  }
+
+  .section-title-skills {
+    grid-column: 1 / span 3;
   }
 }
 
 /* projects section */
 
 .my-projects {
-  background-color: var(--clr-light);
-  color: var(--clr-dark);
+  background-color: var(--clr-dark);
+  background-image: url("../imgs/codebg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  color: var(--clr-light);
   text-align: center;
 }
 
@@ -235,7 +252,7 @@ h3 {
   width: 2em;
   height: 2px;
   margin: 0.5em auto 1em;
-  background: var(--clr-dark);
+  background: var(--clr-light);
   opacity: 0.25;
 }
 
@@ -256,12 +273,16 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 1200px;
+  justify-content: center;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .project {
   width: 400px;
   padding: 1em;
+  margin: 10px;
+  box-shadow: var(--bs);
+  background-color: var(--clr-accent-op);
+  border-radius: 10px;
 }
