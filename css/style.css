@@ -63,10 +63,6 @@ nav {
   display: none;
 }
 
-i {
-  margin: 0.25em 0.5em;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -201,7 +197,6 @@ h3 {
   box-shadow: var(--bs);
   gap: 1rem;
   padding: 3em;
-  height: 100%;
 }
 
 .skill {
@@ -210,6 +205,23 @@ h3 {
   border-radius: 10px;
   text-align: center;
   padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill p {
+  margin-top: auto;
+}
+
+@media (min-width: 800px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+  }
+
+  .section-title-skills {
+    grid-column: 1 / span 2;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -218,12 +230,12 @@ h3 {
   }
 
   .skills {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(min-content, max-content);
   }
 
   .section-title-skills {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 4;
   }
 }
 
@@ -269,6 +281,12 @@ h3 {
   margin-bottom: 0.5em;
 }
 
+.project-heading:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: lightgrey;
+}
+
 .projects {
   display: flex;
   flex-direction: row;
@@ -285,4 +303,57 @@ h3 {
   box-shadow: var(--bs);
   background-color: var(--clr-accent-op);
   border-radius: 10px;
+}
+
+.project-text {
+  display: none;
+}
+
+/* footer section */
+
+.footer {
+  background-color: black;
+  color: var(--clr-accent);
+  text-align: center;
+  padding: 2.5em 0;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-link {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+}
+
+.footer-link:hover,
+.social-list-link:hover {
+  opacity: 0.7;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+  padding: 0;
+}
+
+.social-list-item {
+  margin: 0 0.5em;
+}
+
+.social-list-link {
+  padding: 0.5em;
+}
+
+.section-title-footer {
+  font-family: var(--ff-title);
+  font-weight: var(--fw-bold);
 }
