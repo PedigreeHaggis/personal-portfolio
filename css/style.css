@@ -309,8 +309,8 @@ h3 {
 }
 
 .skill {
-  background-color: #fff;
-  box-shadow: var(--bs);
+  /* background-color: #fff;
+  box-shadow: var(--bs); */
   border-radius: 10px;
   text-align: center;
   padding: 0.5rem;
