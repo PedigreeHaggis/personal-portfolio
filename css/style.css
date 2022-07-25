@@ -295,6 +295,10 @@ h3 {
   height: 100%;
 }
 
+.section-subtitle-about {
+  display: inline-block;
+}
+
 .skill-logo {
   width: 100px;
   margin: 0 auto;
