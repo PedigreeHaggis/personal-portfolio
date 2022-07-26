@@ -447,7 +447,6 @@ h3 {
 
 .project-heading:hover {
   cursor: pointer;
-  text-decoration: underline;
   color: lightgrey;
 }
 
