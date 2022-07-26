@@ -469,6 +469,10 @@ h3 {
   border-radius: 10px;
 }
 
+.project-text {
+  display: none;
+}
+
 /* footer section */
 
 .footer {
