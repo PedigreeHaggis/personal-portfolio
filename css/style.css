@@ -135,7 +135,7 @@ h3 {
   color: var(--clr-light);
   top: 0;
   bottom: 0;
-  left: 75%;
+  left: 0;
   right: 0;
   z-index: 100;
 
@@ -252,6 +252,12 @@ h3 {
 
 .section-subtitle-intro {
   display: inline-block;
+}
+
+@media (min-width: 800px) {
+  .nav {
+    left: 75%;
+  }
 }
 
 @media (min-width: 600px) {
