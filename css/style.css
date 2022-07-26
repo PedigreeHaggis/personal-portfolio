@@ -371,20 +371,6 @@ h3 {
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
-  .info {
-    display: grid;
-    cursor: pointer;
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-h3);
-  }
-
-  .more-info:hover {
-    text-decoration: none;
-    font-weight: var(--fw-reg);
-  }
-}
-
 @media (min-width: 800px) {
   .skills {
     grid-template-columns: repeat(2, 1fr);
