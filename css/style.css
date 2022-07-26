@@ -135,7 +135,7 @@ h3 {
   color: var(--clr-light);
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 75%;
   right: 0;
   z-index: 100;
 
@@ -154,10 +154,21 @@ h3 {
   padding: 0;
 }
 
+.nav-list-item {
+  width: 100%;
+
+  text-align: center;
+}
+
+.nav-list-item:hover {
+  border-left: 1rem solid var(--clr-light);
+}
+
 .nav-link {
   font-weight: var(--fw-bold);
-  font-size: var(--fs-h2);
+  font-size: var(--fs-h3);
   text-decoration: none;
+  margin: 0 auto;
 }
 
 .nav-link:hover {
@@ -320,6 +331,57 @@ h3 {
 
 .skill p {
   margin-top: auto;
+}
+
+.info {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: var(--ff-subtitle);
+  color: #ffffff;
+  font-size: 20px;
+  background: #0aa1dd;
+  padding: 6px 9px;
+  text-decoration: none;
+  box-shadow: var(--bs);
+  transition: all 0.5s ease;
+  border: none;
+  cursor: pointer;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-body);
+  margin-top: 1em;
+}
+
+.info:hover {
+  background: #303030;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.more-info {
+  display: grid;
+}
+
+.less-info {
+  display: none;
+}
+
+.section-text-about {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .info {
+    display: grid;
+    cursor: pointer;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+  }
+
+  .more-info:hover {
+    text-decoration: none;
+    font-weight: var(--fw-reg);
+  }
 }
 
 @media (min-width: 800px) {
