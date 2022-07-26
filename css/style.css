@@ -161,7 +161,8 @@ h3 {
 }
 
 .nav-list-item:hover {
-  border-left: 1rem solid var(--clr-light);
+  border-left: 1rem solid var(--clr-accent);
+  color: var(--clr-accent);
 }
 
 .nav-link {

@@ -15,6 +15,7 @@ function infoBtnClick(){
         lessInfoBtn.style.display = 'none';
         moreInfoBtn.innerText = 'More Info'
         aboutText.forEach(x => x.style.display ='none');
+        moreInfoBtn.innerText = 'More Info'
         moreInfoBtn.style.display ='grid';
     }
 }
