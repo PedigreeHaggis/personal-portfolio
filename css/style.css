@@ -467,6 +467,7 @@ h3 {
   box-shadow: var(--bs);
   background-color: var(--clr-accent-op);
   border-radius: 10px;
+  align-self: flex-start;
 }
 
 .project-text {

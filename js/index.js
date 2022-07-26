@@ -44,7 +44,6 @@ projectHeadings.forEach(heading => {
             projectText.style.display ='none';
             heading.firstElementChild.classList.remove('fa-caret-down');
             heading.firstElementChild.classList.add('fa-caret-right');
-            
         }
 
 
